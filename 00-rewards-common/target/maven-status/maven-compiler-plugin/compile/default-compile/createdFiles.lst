@@ -1,0 +1,8 @@
+common\money\MonetaryAmount.class
+common\money\MonetaryAmountEditor.class
+common\datetime\SimpleDateEditor.class
+common\money\PercentageEditor.class
+common\repository\Entity.class
+common\money\Percentage.class
+common\datetime\DateInterval.class
+common\datetime\SimpleDate.class

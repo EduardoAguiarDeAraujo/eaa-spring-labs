@@ -1,0 +1,6 @@
+config\RestSecurityConfig.class
+accounts\security\CustomUserDetailsService.class
+accounts\services\AccountService.class
+accounts\web\AccountController.class
+accounts\security\CustomAuthenticationProvider.class
+accounts\RestWsApplication.class

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.9.1
+Built-By: araujo
+Build-Jdk: 17.0.7
+Implementation-Title: 32-jdbc-autoconfig
+Implementation-Version: 5.3.23
+Implementation-Vendor-Id: io.spring.training.core-spring
+Implementation-Vendor: Spring Training
+Implementation-URL: https://spring.io/projects/spring-boot/parentProject
+ /32-jdbc-autoconfig
+Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: rewards.RewardsApplication
+Spring-Boot-Version: 2.7.5
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Spring-Boot-Classpath-Index: BOOT-INF/classpath.idx
+Spring-Boot-Layers-Index: BOOT-INF/layers.idx
+

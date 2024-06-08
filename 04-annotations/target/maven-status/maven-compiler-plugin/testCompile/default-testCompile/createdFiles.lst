@@ -1,0 +1,7 @@
+rewards\internal\StubRewardRepository.class
+rewards\internal\StubAccountRepository.class
+rewards\RewardNetworkTests.class
+rewards\internal\RewardNetworkImplTests.class
+rewards\internal\restaurant\JdbcRestaurantRepositoryTests.class
+rewards\internal\StubRestaurantRepository.class
+rewards\TestInfrastructureConfig.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: accounts.web.AccountControllerTests
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 0.796 s - in accounts.web.AccountControllerTests

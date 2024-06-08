@@ -1,0 +1,3 @@
+accounts\client\AccountClientSecurityTests.class
+accounts\web\RestaurantHealthCheckTest.class
+accounts\web\AccountControllerTests.class

@@ -1,0 +1,5 @@
+accounts\client\AccountClientTests.class
+accounts\web\AccountControllerCustomUserDetailsServiceTests.class
+accounts\services\AccountServiceMethodSecurityTest.class
+accounts\web\AccountControllerCustomAuthenticationProviderTests.class
+accounts\web\AccountControllerTests.class

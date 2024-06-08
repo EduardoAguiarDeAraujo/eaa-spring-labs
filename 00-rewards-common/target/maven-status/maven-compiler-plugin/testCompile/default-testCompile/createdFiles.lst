@@ -1,0 +1,4 @@
+common\money\PercentageTests.class
+common\datetime\SimpleDateTests.class
+common\datetime\SimpleDateEditorTests.class
+common\money\MonetaryAmountTests.class

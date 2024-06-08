@@ -1,0 +1,12 @@
+rewards\AccountContribution.class
+rewards\RewardNetwork.class
+rewards\internal\account\Beneficiary.class
+rewards\internal\reward\RewardRepository.class
+rewards\Dining.class
+rewards\AccountContribution$Distribution.class
+rewards\internal\restaurant\Restaurant.class
+rewards\RewardConfirmation.class
+rewards\internal\RewardNetworkImpl.class
+rewards\internal\account\Account.class
+rewards\internal\account\AccountRepository.class
+rewards\internal\restaurant\RestaurantRepository.class

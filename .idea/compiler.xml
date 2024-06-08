@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="38-rest-ws-solution" />
+        <module name="16-annotations" />
+        <module name="16-annotations-solution" />
+        <module name="36-mvc-solution" />
+        <module name="26-jdbc-solution" />
+        <module name="42-security-rest" />
+        <module name="22-aop-solution" />
+        <module name="38-rest-ws" />
+        <module name="40-boot-test" />
+        <module name="40-boot-test-solution" />
+        <module name="30-jdbc-boot-solution" />
+        <module name="28-transactions-solution" />
+        <module name="28-transactions" />
+        <module name="22-aop" />
+        <module name="24-test" />
+        <module name="34-spring-data-jpa" />
+        <module name="00-rewards-common" />
+        <module name="36-mvc" />
+        <module name="44-actuator-solution" />
+        <module name="26-jdbc" />
+        <module name="34-spring-data-jpa-solution" />
+        <module name="12-javaconfig-dependency-injection" />
+        <module name="32-jdbc-autoconfig-solution" />
+        <module name="24-test-solution" />
+        <module name="01-rewards-db" />
+        <module name="44-actuator" />
+        <module name="32-jdbc-autoconfig" />
+        <module name="10-spring-intro-solution" />
+        <module name="12-javaconfig-dependency-injection-solution" />
+        <module name="10-spring-intro" />
+        <module name="42-security-rest-solution" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="00-rewards-common" options="-parameters" />
+      <module name="01-rewards-db" options="-parameters" />
+      <module name="10-spring-intro" options="-parameters" />
+      <module name="10-spring-intro-solution" options="-parameters" />
+      <module name="12-javaconfig-dependency-injection" options="-parameters" />
+      <module name="12-javaconfig-dependency-injection-solution" options="-parameters" />
+      <module name="16-annotations" options="-parameters" />
+      <module name="16-annotations-solution" options="-parameters" />
+      <module name="22-aop" options="-parameters" />
+      <module name="22-aop-solution" options="-parameters" />
+      <module name="24-test" options="-parameters" />
+      <module name="24-test-solution" options="-parameters" />
+      <module name="26-jdbc" options="-parameters" />
+      <module name="26-jdbc-solution" options="-parameters" />
+      <module name="28-transactions" options="-parameters" />
+      <module name="28-transactions-solution" options="-parameters" />
+      <module name="30-jdbc-boot-solution" options="-parameters" />
+      <module name="32-jdbc-autoconfig" options="-parameters" />
+      <module name="32-jdbc-autoconfig-solution" options="-parameters" />
+      <module name="34-spring-data-jpa" options="-parameters" />
+      <module name="34-spring-data-jpa-solution" options="-parameters" />
+      <module name="36-mvc" options="-parameters" />
+      <module name="36-mvc-solution" options="-parameters" />
+      <module name="38-rest-ws" options="-parameters" />
+      <module name="38-rest-ws-solution" options="-parameters" />
+      <module name="40-boot-test" options="-parameters" />
+      <module name="40-boot-test-solution" options="-parameters" />
+      <module name="42-security-rest" options="-parameters" />
+      <module name="42-security-rest-solution" options="-parameters" />
+      <module name="44-actuator" options="-parameters" />
+      <module name="44-actuator-solution" options="-parameters" />
+      <module name="parentProject" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: accounts.client.AccountClientTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 5.19 s - in accounts.client.AccountClientTests

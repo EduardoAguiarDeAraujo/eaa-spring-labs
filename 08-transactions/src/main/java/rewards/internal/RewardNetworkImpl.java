@@ -1,5 +1,7 @@
 package rewards.internal;
 
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import rewards.AccountContribution;
 import rewards.Dining;
 import rewards.RewardConfirmation;
@@ -53,7 +55,8 @@ public class RewardNetworkImpl implements RewardNetwork {
 	
 	// TODO-01: Annotate this method as needing transactional behavior
 	// Make sure to use the annotation from Spring not from Java EE.
-	
+//	@Transactional(propagation = Propagation.REQUIRES_NEW)
+	@Transactional
 	public RewardConfirmation rewardAccountFor(Dining dining) {
 		Account account = accountRepository.findByCreditCard(dining.getCreditCardNumber());
 		Restaurant restaurant = restaurantRepository.findByMerchantNumber(dining.getMerchantNumber());

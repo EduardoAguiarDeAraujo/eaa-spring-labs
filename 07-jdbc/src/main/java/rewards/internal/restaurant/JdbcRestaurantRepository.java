@@ -2,6 +2,7 @@ package rewards.internal.restaurant;
 
 import common.money.Percentage;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
 import rewards.Dining;
 import rewards.internal.account.Account;
 
@@ -40,24 +41,27 @@ public class JdbcRestaurantRepository implements RestaurantRepository {
 
 	private DataSource dataSource;
 
-	public JdbcRestaurantRepository(DataSource dataSource) {
+	private JdbcTemplate jdbcTemplate;
+
+	public JdbcRestaurantRepository(JdbcTemplate jdbcTemplate) {
 		this.dataSource = dataSource;
+		this.jdbcTemplate = jdbcTemplate;
 	}
 
 	public Restaurant findByMerchantNumber(String merchantNumber) {
 		String sql = "select MERCHANT_NUMBER, NAME, BENEFIT_PERCENTAGE, BENEFIT_AVAILABILITY_POLICY"
 				+ " from T_RESTAURANT where MERCHANT_NUMBER = ?";
-		Restaurant restaurant = null;
+		Restaurant restaurant = jdbcTemplate.queryForObject(sql, (rs, rowNum) -> mapRestaurant(rs), merchantNumber);
 
-		try (Connection conn = dataSource.getConnection();
-			 PreparedStatement ps = conn.prepareStatement(sql) ){
-			ps.setString(1, merchantNumber);
-			ResultSet rs = ps.executeQuery();
-			advanceToNextRow(rs);
-			restaurant = mapRestaurant(rs);
-		} catch (SQLException e) {
-			throw new RuntimeException("SQL exception occurred finding by merchant number", e);
-		}
+//		try (Connection conn = dataSource.getConnection();
+//			 PreparedStatement ps = conn.prepareStatement(sql) ){
+//			ps.setString(1, merchantNumber);
+//			ResultSet rs = ps.executeQuery();
+//			advanceToNextRow(rs);
+//			restaurant = mapRestaurant(rs);
+//		} catch (SQLException e) {
+//			throw new RuntimeException("SQL exception occurred finding by merchant number", e);
+//		}
 
 		return restaurant;
 	}
@@ -85,11 +89,11 @@ public class JdbcRestaurantRepository implements RestaurantRepository {
 	 * @throws EmptyResultDataAccessException if there is no next row
 	 * @throws SQLException
 	 */
-	private void advanceToNextRow(ResultSet rs) throws EmptyResultDataAccessException, SQLException {
-		if (!rs.next()) {
-			throw new EmptyResultDataAccessException(1);
-		}
-	}
+//	private void advanceToNextRow(ResultSet rs) throws EmptyResultDataAccessException, SQLException {
+//		if (!rs.next()) {
+//			throw new EmptyResultDataAccessException(1);
+//		}
+//	}
 
 	/**
 	 * Helper method that maps benefit availability policy data in the ResultSet to a fully-configured
